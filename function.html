@@ -6,14 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="intro()">Click to know me</button>
+    <button onclick="funFact()">Click for fun fact</button>
     <script>
-        function greeting(){
-            firstname = 'Naufal'
-            lastname = 'Satrio Putra'
-            console.log(`My name is ${firstname} ${lastname}`)
+        function intro() {
+            document.write('Hi <br>');
+            document.write('My Name is Naufal <br>');
+            document.write('I want to be a software developer <br>');
         }
 
-        greeting()
+        function funFact() {
+            document.write('Do you know? <br>');
+            document.write('The first programmer in the world was a woman named Ada Lovelace. <br>');
+        }
     </script>
 </body>
 </html>
