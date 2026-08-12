@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const time_spent = [2, 2, 3, 3, 1, 4, 5];
+        const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
+        const excedeed = [];
+        let total_time = 0;
+
+        for (i = 0; i < time_spent.length; i++) {
+            if(time_spent[i] > 2) {
+                excedeed.push(days[i]);
+            }
+            total_time += time_spent[i];
+        }
+
+        console.log('timespent:', total_time);
+        console.log('exceeded:', excedeed.length);
+    </script>
+</body>
+</html>
